@@ -27,6 +27,8 @@ export const GlbContainer = forwardRef(({ children }, ref) => (
   </Box>
 ))
 
+GlbContainer.displayName = 'GlbContainer'
+
 const Loader = () => {
   return (
     <GlbContainer>
