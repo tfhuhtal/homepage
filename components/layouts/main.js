@@ -3,6 +3,7 @@ import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
 import Loader from '../voxel-loader'
+import Footer from '../footer'
 
 const VoxelGlb = dynamic(() => import('../voxel-glb'), {
   ssr: false,
@@ -24,6 +25,7 @@ const Main = ({ children, router }) => {
 
         {children}
 
+        <Footer />
       </Container>
     </Box>
   )
