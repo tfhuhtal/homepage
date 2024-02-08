@@ -4,6 +4,7 @@ import {
   Link,
   List,
   ListItem,
+  SimpleGrid
 } from '@chakra-ui/react'
 import Image from 'next/image'
 import Layout from '../../components/layouts/article'
@@ -55,7 +56,9 @@ const Pathfinding = () => {
             </span>
           </ListItem>
         </List>
-            <Image style={{ 'borderRadius': '12px'}} width="500" heigth="500" src={picture2} alt="pathfinding" mb={4} />
+        <SimpleGrid columns={1} gap={6}>
+            <Image style={{ 'borderRadius': '12px'}} src={picture2} alt="pathfinding" mb={4} />
+        </SimpleGrid>
       </Container>
     </Layout>
   )

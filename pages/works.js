@@ -6,6 +6,7 @@ import thumbPathfinding from '../public/images/works/pathfinding.png'
 import thumbReferenceApp from '../public/images/works/jsontobib1.png'
 import thumbBookregister from '../public/images/works/bookregister.png'
 import thumbHome from '../public/images/works/websidan.png'
+import thumbChat from '../public/images/works/chatapp.png'
 
 const Works = () => {
   return (
@@ -29,13 +30,20 @@ const Works = () => {
           </WorkGridItem>
         </Section>
           <Section delay={0.2}>
+            <WorkGridItem id="chatapp" title="Chat App"
+            thumbnail={thumbChat}
+            >
+              Database project where I developed chatroom application.
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.2}>
             <WorkGridItem id="referencehandler" title="Reference Handler"
             thumbnail={thumbReferenceApp}>
             Project where me and 5 others worked in a scrum team 
               and developed Bibtex reference handler app for client.
             </WorkGridItem>
           </Section>
-          <Section delay={0.2}>
+          <Section delay={0.3}>
             <WorkGridItem id="bookregister" title="Book register"
             thumbnail={thumbBookregister}>
               Project where I made Java App using Java and JavaFx
