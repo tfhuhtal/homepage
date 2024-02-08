@@ -28,12 +28,15 @@ const Home = () => {
         textAlign="center"
         css={{ backdropFilter: 'blur(10px)' }}
         >
-          Hello, I&apos;m computer science student at University of Helsinki!
+        <Heading style={{ 'fontSize': '16px' }}>
+          Hey, digital traveler! Get comfortable, because 
+          your journey through my website is about to begin.
+        </Heading>
         </Box>
 
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
-            <Heading as="h2" variant="page-title">
+            <Heading style={{ 'fontSize': '24px' }} variant="page-title">
               Tuomas Huhtala
             </Heading>
             <p>software engineer / student</p>
@@ -67,20 +70,20 @@ const Home = () => {
             Work
           </Heading>
           <Paragraph>
-          I am Tuomas, a student and freetime software engineer residing in Helsinki. 
-            My passion lies in continuously expanding my knowledge and skills 
-            in software engineering. While I haven&apos;t yet ventured into the realm 
-            of professional software engineering, I&apos;m driven by my own projects 
-            and coursework in computer science. Enthusiasm fuels my journey,
-            despite the absence of real-world work experience in this field.
-             Currently I am seeking my first job at IT.
+          I&apos;m Tuomas, a software engineer based in Helsinki, 
+          just doing my thing in my free time. 
+          I&apos;m all about expanding my skills in computer science, 
+          especially loving full-stack development and DevOps right now.
+          Currently, I&apos;m diving into a software engineering project course 
+          where I get to play around with both roles.
+          Oh, and I&apos;ve been tinkering with NeoVim lately. 
+          Check out my configs on my GitHub dotfiles repo if you&apos;re curious!
           </Paragraph>
           <Box align="center" my={4}>
             <Button
               bg="#66ff00"
               as={NextLink}
               href="/works"
-              //scroll="false"
               rightIcon={<ChevronRightIcon />}
               >
               My portfolio
@@ -93,20 +96,20 @@ const Home = () => {
             Bio
           </Heading>
           <BioSection>
-            <BioYear>2000</BioYear>
-            Born in Sipoo, Finland
+            <BioYear>2019</BioYear>
+            Wrote my first &apos;Hello World&apos; with Java
           </BioSection>
           <BioSection>
             <BioYear>2021</BioYear>
-            Started computer science studies at UoJ, Finland.
+            Started computer science studies at University of Jyväskylä, Finland.
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-            Transferred from UoJ to UoH
+            Transferred from University of Jyväskylä to University of Helsinki.
           </BioSection>
           <BioSection>
             <BioYear>2024</BioYear>
-            Finishing my bachelor&apos;s of science
+            Finishing my bachelor&apos;s of science. Major computer science, minor mathematics.
           </BioSection>
         </Section>
 
@@ -121,7 +124,7 @@ const Home = () => {
             </Link>
             , Running,
             Playing instruments,
-            Machine Learning
+            Algorithms
           </Paragraph>
         </Section>
 

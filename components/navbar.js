@@ -61,7 +61,7 @@ const NavBar = props => {
         align="center"
         justify="space-between">
         <Flex align="center" mr={6}>
-          <Heading as="h3" size="lg" letterSpacing={'tighter'}>
+          <Heading size="lg" style={{ 'fontSize': '18px'}} letterSpacing={'tighter'}>
             / Tuomas Huhtala
           </Heading>
         </Flex>
