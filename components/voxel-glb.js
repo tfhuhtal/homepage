@@ -70,7 +70,7 @@ const VoxelGlb = () => {
       controls.autoRotate = true
       controls.target = target
 
-      loadGLTFModel(scene, '/computer.glb',{
+      loadGLTFModel(scene, '/computer.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
