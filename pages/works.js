@@ -7,6 +7,11 @@ import thumbReferenceApp from '../public/images/works/jsontobib1.png'
 import thumbBookregister from '../public/images/works/bookregister.png'
 import thumbHome from '../public/images/works/websidan.png'
 import thumbChat from '../public/images/works/chatapp.png'
+import thumbLomake from '../public/images/works/lomake.png'
+import thumbNorppa from '../public/images/works/norppa.png'
+import thumbCurrechat from '../public/images/works/currechat.png'
+import thumbCompilers from '../public/images/works/compilers.png'
+import thumbMuvico from '../public/images/works/muvico.png'
 
 const Works = () => {
   return (
@@ -48,6 +53,36 @@ const Works = () => {
             thumbnail={thumbBookregister}>
               Project where I made Java App using Java and JavaFx
                for registering and keeping notes from books
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.3}>
+            <WorkGridItem id="lomake" title="Lomake"
+            thumbnail={thumbLomake}>
+              Lomake project description
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.4}>
+            <WorkGridItem id="norppa" title="Norppa"
+            thumbnail={thumbNorppa}>
+              Norppa project description
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.4}>
+            <WorkGridItem id="currechat" title="CurreChat"
+            thumbnail={thumbCurrechat}>
+              CurreChat project description
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.5}>
+            <WorkGridItem id="compilers" title="Compilers"
+            thumbnail={thumbCompilers}>
+              Compilers project description
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.5}>
+            <WorkGridItem id="muvico" title="Muvico"
+            thumbnail={thumbMuvico}>
+              Muvico project description
             </WorkGridItem>
           </Section>
       </SimpleGrid>

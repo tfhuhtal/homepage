@@ -1,6 +1,6 @@
-import { 
-  Container, 
-  Box, 
+import {
+  Container,
+  Box,
   Heading,
   Link,
   Button,
@@ -14,7 +14,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Image from 'next/image'
-import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 
 const Home = () => {
@@ -22,16 +22,16 @@ const Home = () => {
     <Layout>
       <Container>
         <Box
-        borderRadius="lg"
-        mb={6}
-        p={4}
-        textAlign="center"
-        css={{ backdropFilter: 'blur(10px)' }}
+          borderRadius="lg"
+          mb={6}
+          p={4}
+          textAlign="center"
+          css={{ backdropFilter: 'blur(10px)' }}
         >
-        <Heading style={{ 'fontSize': '16px' }}>
-          Hey, digital traveler! Get comfortable, because 
-          your journey through my website is about to begin.
-        </Heading>
+          <Heading style={{ 'fontSize': '16px' }}>
+            Hey, digital traveler! Get comfortable, because
+            your journey through my website is about to begin.
+          </Heading>
         </Box>
 
         <Box display={{ md: 'flex' }}>
@@ -47,20 +47,20 @@ const Home = () => {
             ml={{ md: 6 }}
             textAlign="center">
             <Box
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            w="100px"
-            h="100px"
-            display="inline-block"
-            borderRadius="full"
-            overflow="hidden"
+              borderColor="whiteAlpha.800"
+              borderWidth={2}
+              borderStyle="solid"
+              w="100px"
+              h="100px"
+              display="inline-block"
+              borderRadius="full"
+              overflow="hidden"
             >
               <Image
                 src="/images/profile.jpeg"
                 alt="Profile image"
                 width="100"
-                height="100"/>
+                height="100" />
             </Box>
           </Box>
         </Box>
@@ -70,14 +70,15 @@ const Home = () => {
             Work
           </Heading>
           <Paragraph>
-          I&apos;m Tuomas, a software engineer based in Helsinki, 
-          just doing my thing in my free time. 
-          I&apos;m all about expanding my skills in computer science, 
-          especially loving full-stack development and DevOps right now.
-          Currently, I&apos;m diving into a software engineering project course 
-          where I get to play around with both roles.
-          Oh, and I&apos;ve been tinkering with NeoVim lately. 
-          Check out my configs on my GitHub dotfiles repo if you&apos;re curious!
+            I&apos;m Tuomas, a software developer based in Helsinki,
+            just doing my thing in my free time.
+            I&apos;m all about expanding my skills in computer science,
+            especially loving full-stack development and DevOps right now.
+            Currently, I&apos;m doing my master&apos;s thesis along side working at Toska.
+            Oh, and I&apos;ve been tinkering with
+            <Link href='https://helix-editor.com' target='_blank'>{" Helix "}</Link>
+            lately.
+            Check out my configs on my GitHub dotfiles repo if you&apos;re curious!
           </Paragraph>
           <Box align="center" my={4}>
             <Button
@@ -85,7 +86,7 @@ const Home = () => {
               as={NextLink}
               href="/works"
               rightIcon={<ChevronRightIcon />}
-              >
+            >
               My portfolio
             </Button>
           </Box>
@@ -109,7 +110,18 @@ const Home = () => {
           </BioSection>
           <BioSection>
             <BioYear>2024</BioYear>
-            Finishing my bachelor&apos;s of science. Major computer science, minor mathematics.
+            Finished my bachelor&apos;s of science. Major computer science, minor mathematics.
+          </BioSection>
+
+          <BioSection>
+            <BioYear>2024</BioYear>
+            Started working at University of Helsinki Computer Science Department Software Development academy (
+            <Link href="https://toska.dev" target='_blank'>toska.dev</Link>
+            )
+          </BioSection>
+          <BioSection>
+            <BioYear>2024</BioYear>
+            Started my master&apos;s of science studies at University of Helsinki.
           </BioSection>
         </Section>
 
@@ -118,13 +130,7 @@ const Home = () => {
             Things that I love
           </Heading>
           <Paragraph>
-            Art, Home decor, {' '}
-            <Link href="https://open.spotify.com/user/qr1vukqdgfb35b8k0dist99bb?si=f176e9a51ffa4d05">
-            Music
-            </Link>
-            , Running,
-            Playing instruments,
-            Algorithms
+            climbing, music, fine-dining, home labbing, <Link href="https://lobste.rs">lobste.rs</Link>
           </Paragraph>
         </Section>
 
@@ -152,26 +158,19 @@ const Home = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://www.instagram.com/tuomas.2">
+              <Link href='mailto:tuomas.huhtala.tfh@gmail.com'>
                 <Button
                   variant="ghost"
-                  leftIcon={<IoLogoInstagram />}>
-                  @tuomas.2
+                  leftIcon={<EmailIcon />}>
+                  tuomas.huhtala.tfh@gmail.com
                 </Button>
               </Link>
-            </ListItem>
-            <ListItem>
-              <Button
-              variant="ghost"
-              leftIcon={<EmailIcon />}>
-                tuomas.huhtala@icloud.com
-              </Button>
             </ListItem>
           </List>
         </Section>
       </Container>
-    </Layout>
- ) 
+    </Layout >
+  )
 }
 
 export default Home
